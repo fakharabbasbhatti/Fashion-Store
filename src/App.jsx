@@ -15,6 +15,7 @@ import Footer from "./components/comman/Footer";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Shop from "./pages/Shop";
+import Cart from "./pages/Cart";
 import Contact from "./pages/Contact";
 
 
@@ -40,6 +41,7 @@ const router = createBrowserRouter([
       { index: true, element: <Home /> },
       { path: "about", element: <About /> },
       { path: "shop", element: <Shop /> },
+      { path: "cart", element: <Cart /> },
       { path: "contact", element: <Contact /> }
 
     ],

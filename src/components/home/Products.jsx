@@ -2,9 +2,12 @@ import React, { useEffect, useState } from "react";
 import { FaCartPlus, FaStar } from "react-icons/fa";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { useDispatch } from "react-redux";           // 🔥 Redux dispatch
+import { addToCart } from "../../features/cart/cartSlice"; // 🔥 Cart slice
 
 const Products = () => {
   const [products, setProducts] = useState([]);
+  const dispatch = useDispatch(); // 🔥 Redux dispatch
 
   useEffect(() => {
     AOS.init({
@@ -57,7 +60,11 @@ const Products = () => {
 
             <p className="text-xl font-bold text-black mb-4">${product.price}</p>
 
-            <button className="flex items-center justify-center gap-2 w-full bg-black text-white py-3 rounded-xl font-semibold hover:bg-pink-500 transition-all">
+            {/* 🔥 Redux Add to Cart */}
+            <button
+              onClick={() => dispatch(addToCart(product))}
+              className="flex items-center justify-center gap-2 w-full bg-black text-white py-3 rounded-xl font-semibold hover:bg-pink-500 transition-all"
+            >
               <FaCartPlus />
               Add to Cart
             </button>
