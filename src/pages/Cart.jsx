@@ -6,9 +6,20 @@ const Cart = () => {
   const cartItems = useSelector((state) => state.cart.items);
   const dispatch = useDispatch();
 
+  // Total amount calculate
   const totalAmount = cartItems.reduce((acc, item) => acc + item.price * item.quantity, 0);
 
-  if (cartItems.length === 0) return <h2 className="text-center mt-10">Your cart is empty</h2>;
+  // 🔹 Empty cart message
+  if (cartItems.length === 0) {
+    return (
+      <div className="flex flex-col items-center justify-center min-h-screen px-6">
+        <h2 className="text-3xl font-bold mb-4">Your Cart is Empty</h2>
+        <p className="text-gray-600 text-center">
+          You haven’t added any products yet. Browse our shop to start adding items!
+        </p>
+      </div>
+    );
+  }
 
   return (
     <div className="px-6 py-10 min-h-screen bg-gray-100">

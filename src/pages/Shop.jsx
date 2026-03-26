@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchProducts } from "../features/products/productSlice";
 import ProductCard from "../components/shop/ProductCard";
+import Hero from "../components/shop/Hero";
 
 const Shop = () => {
   const dispatch = useDispatch();
@@ -28,6 +29,9 @@ const Shop = () => {
     );
 
   return (
+    <>
+    <Hero/>
+    
     <div className="px-6 py-10 bg-gray-100 min-h-screen">
       
       <h1 className="text-3xl font-bold text-center mb-10">
@@ -46,6 +50,7 @@ const Shop = () => {
       </div>
 
     </div>
+    </>
   );
 };
 
