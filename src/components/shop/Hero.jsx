@@ -11,7 +11,7 @@ const Hero = () => {
 
   return (
     <section
-      className="relative min-h-[90vh] flex items-center bg-gradient-to-r from-black to-gray-800 text-white overflow-hidden"
+      className="relative min-h-screen flex items-center bg-gradient-to-r from-black to-gray-800 text-white overflow-hidden"
       style={{
         backgroundImage: "linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8ZmFzaGlvbiUyMHNob3B8ZW58MHx8MHx8fDA%3D')",
         backgroundSize: 'cover',
@@ -25,7 +25,7 @@ const Hero = () => {
       <div className="relative max-w-7xl mx-auto px-6 md:pt-40 grid md:grid-cols-2 gap-12 items-center">
         {/* Left Text */}
         <div data-aos="fade-right">
-          <h1 className="text-4xl md:text-5xl font-extrabold mb-6">
+          <h1 className="text-4xl md:text-5xl font-bold mb-6">
             Shop <span className="text-pink-500">Our Products</span>
           </h1>
 

@@ -15,7 +15,7 @@ const Hero = () => {
 
   return (
     <section
-      className="relative min-h-[95vh] flex items-center bg-cover bg-center overflow-hidden"
+      className="relative min-h-screen flex items-center bg-cover bg-center overflow-hidden"
       style={{
         backgroundImage:
           "linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url('https://images.unsplash.com/photo-1512436991641-6745cdb1723f')",
