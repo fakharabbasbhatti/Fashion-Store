@@ -17,7 +17,7 @@ const WhyChooseUs = () => {
   return (
     <section className="bg-white py-20 overflow-hidden">
       <div className="max-w-7xl mx-auto px-6">
-        <h2 className="text-3xl md:text-4xl font-extrabold text-center text-black mb-14" data-aos="fade-up">
+        <h2 className="text-3xl md:text-4xl font-bold text-center text-black mb-14" data-aos="fade-up">
           Why Shop with <span className="text-pink-500">MiniStore</span>
         </h2>
 

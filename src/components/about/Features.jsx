@@ -28,7 +28,7 @@ const Features = () => {
               {item.icon}
             </div>
 
-            <h3 className="font-extrabold text-xl mb-3 text-black">
+            <h3 className="font-bold text-xl mb-3 text-black">
               {item.title}
             </h3>
 

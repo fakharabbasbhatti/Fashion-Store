@@ -35,7 +35,7 @@ const Hero = () => {
           </div>
 
           <h1
-            className="text-4xl md:text-6xl font-extrabold leading-tight mb-6"
+            className="text-4xl md:text-6xl font-bold leading-tight mb-6"
             data-aos="fade-up"
           >
             Discover Your <br />
